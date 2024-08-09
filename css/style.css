@@ -3554,6 +3554,14 @@ price
 404
 
 ***************************/
+#mil-404-btn{
+  margin-left: 37%;
+}
+@media screen and (max-width: 992px){
+  #mil-404-btn{
+    margin-left: 10%;
+  }
+}
 .mil-404-banner .mil-animation-frame {
   z-index: 2;
 }
