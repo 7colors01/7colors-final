@@ -4184,6 +4184,10 @@ images
   position: relative;
   overflow: hidden;
 }
+.mil-image-frame-1 {
+  position: relative;
+  overflow: hidden;
+}
 .mil-image-frame > img {
   position: absolute;
   top: 0;
@@ -4195,8 +4199,21 @@ images
   -o-object-position: center;
      object-position: center;
 }
+.mil-image-frame-1 > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
 .mil-image-frame.mil-horizontal {
   padding-bottom: 65%;
+}
+.mil-image-frame-1.mil-horizontal-1 {
+  padding-bottom: 55%;
 }
 .mil-image-frame.mil-vertical {
   padding-bottom: 140%;
