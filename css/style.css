@@ -3362,9 +3362,10 @@ portfolio
     background-color: rgb(255, 255, 255);
   }
   .mil-portfolio-nav .mil-portfolio-btns-frame {
-    width: 100%;
     height: auto;
-    padding: 0;
+    width: 50%;
+    padding: 10px;
+    margin-left: 8%;
   }
 }
 
