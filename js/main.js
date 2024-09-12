@@ -62,7 +62,7 @@ $(function () {
     {
       y: "0px",
       opacity: 1,
-      stagger: 0.4,
+      stagger: 0.2,
     },
   );
 
