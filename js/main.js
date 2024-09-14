@@ -65,27 +65,28 @@ $(function () {
       stagger: 0.2,
     },
   );
+// -----------------------
+  // timeline.to(
+  //   ".mil-animation-1 .mil-h3",
+  //   {
+  //     opacity: 0,
+  //     y: "-30",
+  //   },
+  //   "+=.3",
+  // );
 
-  timeline.to(
-    ".mil-animation-1 .mil-h3",
-    {
-      opacity: 0,
-      y: "-30",
-    },
-    "+=.3",
-  );
-
-  timeline.fromTo(
-    ".mil-reveal-box",
-    0.1,
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-      x: "-30",
-    },
-  );
+  // timeline.fromTo(
+  //   ".mil-reveal-box",
+  //   0.1,
+  //   {
+  //     opacity: 0,
+  //   },
+  //   {
+  //     opacity: 1,
+  //     x: "-30",
+  //   },
+  // );
+// -----------------------
 
   timeline.to(
     ".mil-reveal-box",

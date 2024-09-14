@@ -25,6 +25,7 @@
 
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/style2.css">
     <!-- font awesome css -->
     <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
     <!-- swiper css -->
@@ -34,7 +35,8 @@
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
     <!-- page logo -->
-    <link rel="icon" href="img/image 485.png" type="image/png">
+    <link rel="icon" href="./img/Logo.webp" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- page name -->
     <title>7colors</title>
 
@@ -64,7 +66,7 @@
         <!-- cursor end -->
 
         <!-- preloader -->
-        <div class="mil-preloader">
+         <div class="mil-preloader">
             <div class="mil-preloader-animation">
                 <div class="mil-pos-abs mil-animation-1">
                     <p class="mil-h3 mil-muted mil-thin">Creating </p>
@@ -86,7 +88,7 @@
             <!-- frame clone -->
             <div class="mil-frame-top">
                 <a href="index.html" class="mil-logo">
-                    <img src="img/image 485.png" height="100px" width="100px" alt="Logo">
+                    <img src="./img/Logo.webp" height="100px" width="100px" alt="Logo">
                 </a>
                 <div class="mil-menu-btn">
                     <span></span>
@@ -208,7 +210,7 @@
         <div class="mil-frame">
             <div class="mil-frame-top">
                 <a href="index.html" class="mil-logo">
-                    <img src="img/image 485.png" height="100px" width="100px" alt="Logo">
+                    <img src="./img/Logo.webp" height="100px" width="100px" alt="Logo">
                 </a>
                 <div class="mil-menu-btn">
                     <span></span>
@@ -225,6 +227,11 @@
             </div>
         </div>
         <!-- frame end -->
+
+        <button id="FormButton-2" class="form-btn2">
+            <span>Free Consultancy</span>
+            <i class='bx bx-chevron-down' ></i>
+        </button>
 
         <!-- content -->
         <div class="mil-content">
@@ -248,20 +255,21 @@
                                 <div class="row">
                                     <div class="col-md-7 col-lg-5">
 
-                                        <p class="mil-light-soft mil-mb-60">Howdy, digital explorers! Step right in and make yourselves at home in our cozy corner of the web. We're here to be your trusty guides as we paint your brand's digital destiny with strokes of creativity and a splash of innovation.</p>
-
+                                        <p class="mil-light-soft mil-mb-60 hero-para">
+                                            We deliver measurable growth, increased sales, and tailored strategies that resonate. From branding to ROI-focused campaigns, we help businesses scale and succeed.    
+                                        </p>
                                     </div>
                                 </div>
 
-                                <a href="contact.html" class="mil-button mil-arrow-place mil-btn-space">
-                                    <span>Contact Us</span>
+                                <a id="FormButton" class="mil-button mil-arrow-place mil-btn-space">
+                                    <span> Free Consultation</span>
                                 </a>
 
                                 <a href="services.html" class="mil-link mil-muted mil-arrow-place">
                                     <span>What We Do</span>
                                 </a>
-
-                                <div class="mil-circle-text">
+                                 
+                                <!-- <div class="mil-circle-text">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
                                         <defs>
                                             <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
@@ -270,19 +278,74 @@
                                         <g>
                                             <use xlink:href="#circlePath" fill="none" />
                                             <text style="letter-spacing: 6.5px">
-                                                <!-- circle text -->
                                                 <textPath xlink:href="#circlePath">Scroll down - Scroll down - </textPath>
                                             </text>
                                         </g>
                                     </svg>
                                     <a href="#about" class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
-                                </div>
+                                </div> -->
 
                             </div>
+                           
                         </div>
                     </div>
                 </section>
                 <!-- banner end -->
+
+                <!-- ---------Lead gen form--------- -->
+
+                <div class="lead-gen-form-container">
+                    <div class="lead-form-header">
+                        <h4>Schedule a call.</h4>
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <form action="" method="" class="lead-gen-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="contact">Contact Number:</label>
+                        <input type="number" id="contact" name="contact" required pattern="[0-9]{10}" title="Enter a 10-digit contact number">
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="business">Business Name:</label>
+                        <input type="text" id="business" name="business">
+                    
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                    
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+
+                        <ul class="mil-social-icons mil-up" style="display: flex;flex-direction: row;align-items: center;justify-content: center;margin-top: -10px;">
+                            <li>
+                                <a href="https://www.facebook.com/people/7colors/61556792813679/" target="blank" class="social-icon"> 
+                                    <i class='bx bxl-facebook-circle'></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=919875130005" target="blank" class="social-icon"> 
+                                    <i class='bx bxl-whatsapp-square' ></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/7colors.in?igsh=MXVzdzZqYnA2ZDdvbA==" target="blank" class="social-icon"> 
+                                    <i class='bx bxl-instagram-alt' ></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com/company/82655779/" target="blank" class="social-icon"> 
+                                    <i class='bx bxl-linkedin' ></i>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
 
                 <!-- about -->
                 <section id="about">
@@ -291,18 +354,37 @@
                             <div class="col-lg-6 col-xl-5">
 
                                 <div class="mil-mb-90">
-                                    <h2 class="mil-up mil-mb-30">Step In, We're a Catch!</h2>
-                                    <p class="mil-up mil-mb-15">We are 7colors, the rainbow of social media and design. We make your brand shine online with our colorful and creative services. Whether you need a logo, a video, a website, or a campaign, we have the right hue for you.</p>
+                                    <h2 class="mil-up mil-mb-30 about-heading">Step In, We're a Catch!</h2>
+                                    <p class="mil-up mil-mb-15 about-para">We are 7colors, the rainbow of social media and design. We make your brand shine online with our colorful and creative services. Whether you need a logo, a video, a website, or a campaign, we have the right hue for you.</p>
 
-                                    <p class="mil-up mil-mb-15">We are not your typical agency. We are a bunch of artists, storytellers, and innovators who love to play with colors and ideas. We don’t follow trends, we set them. We don’t do boring, we do brilliant. We don’t do ordinary, we do extraordinary.</p>
+                                    <p class="mil-up mil-mb-15 about-para">We are not your typical agency. We are a bunch of artists, storytellers, and innovators who love to play with colors and ideas. We don’t follow trends, we set them. We don’t do boring, we do brilliant. We don’t do ordinary, we do extraordinary.</p>
                                     
-                                    <p class="mil-up mil-mb-60">We have worked with clients from all over the spectrum, from travel to education to healthcare to real estate. We have helped them paint their online presence with our vibrant and versatile solutions. We are proud of our work and we love to show it off on our portfolio.</p>
+                                    <p class="mil-up mil-mb-60 about-para">We have worked with clients from all over the spectrum, from travel to education to healthcare to real estate. We have helped them paint their online presence with our vibrant and versatile solutions. We are proud of our work and we love to show it off on our portfolio.</p>
                                     <div class="mil-mb-30">
                                         <ul class="mil-social-icons mil-up">
-                                            <li><a href="https://www.facebook.com/people/7colors/61556792813679/" target="blank" class="social-icon"> <i class="fab fa-facebook-square"></i></a></li>
-                                            <li><a href="https://api.whatsapp.com/send?phone=919875130005" target="blank" class="social-icon"> <i class="fab fa-whatsapp-square"></i></a></li>
-                                            <li><a href="https://www.instagram.com/7colors.in?igsh=MXVzdzZqYnA2ZDdvbA==" target="blank" class="social-icon"> <i class="fab fa-instagram-square"></i></a></li>
-                                            <li><a href="https://www.linkedin.com/company/82655779/" target="blank" class="social-icon"> <i class="fab fa-linkedin"></i></a></li>
+                                            <li>
+                                                <a href="https://www.facebook.com/people/7colors/61556792813679/" target="blank" class="social-icon"> 
+                                                    <i class='bx bxl-facebook-circle'></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://api.whatsapp.com/send?phone=919875130005" target="blank" class="social-icon"> 
+                                                    <i class='bx bxl-whatsapp-square' ></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://www.instagram.com/7colors.in?igsh=MXVzdzZqYnA2ZDdvbA==" target="blank" class="social-icon"> 
+                                                    <i class='bx bxl-instagram-alt' ></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/82655779/" target="blank" class="social-icon"> 
+                                                    <i class='bx bxl-linkedin' ></i>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                     
@@ -430,7 +512,7 @@
                                         <div class="col-sm-6">
 
                                             <div class="mil-team-card mil-up mil-mb-30">
-                                                <img src="img/partners/Frame 25.png" alt="Team member">
+                                                <img src="img/Other/Khush Goyal.webp" alt="Team member">
                                                 <div class="mil-description">
                                                     <div class="mil-secrc-text">
                                                         <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Khush Goyal</a></h5>
@@ -465,7 +547,7 @@
                                             <p class="mil-mobile-hidden mil-text-sm mil-mb-30" style="height: 30px;"><span class="mil-accent">*</span> The founders of our agency</p>
 
                                             <div class="mil-team-card mil-up mil-mb-30">
-                                                <img src="img/partners/Frame 24.png" alt="Team member">
+                                                <img src="img/Other/Yash Soni.webp" alt="Team member">
                                                 <div class="mil-description">
                                                     <div class="mil-secrc-text">
                                                         <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Yash Soni</a></h5>
@@ -546,22 +628,22 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">Nitai</h5>
+                                                <h5 class="mil-up mil-mb-10">Nitin Goyal</h5>
                                                 <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Shuddhi</p>
                                                 <p class="mil-text-xl mil-up">I had the pleasure of working with 7colors, and I must say, they truly impressed me. They consistently think outside the box, resulting in impressive and impactful work. I highly recommend this agency for their consistent delivery of exceptional creative solutions.</p>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">SHRIYA BHARGAVA</h5>
+                                                <h5 class="mil-up mil-mb-10">Shriya Bhargava</h5>
                                                 <p class="mil-mb-5 mil-upper mil-up mil-mb-30">AMITEK</p>
                                                 <p class="mil-text-xl mil-up">We are extremely satisfied with the design services from 7colors for our product flyers and PowerPoint presentations. Their attention to detail and innovative designs have made a remarkable impact on our marketing efforts</p>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">Vippul Sharma</h5>
-                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Eelegant Event</p>
+                                                <h5 class="mil-up mil-mb-10">Vipul Sharma</h5>
+                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Eelegant Events</p>
                                                 <p class="mil-text-xl mil-up">The team has elevated our event management company's profile with exceptional social media services and creative offline designs, driving engagement and setting new standards for our promotions. Their expertise has not only enhanced our online presence but also transformed our offline promotional materials, contributing significantly to our success.
                                                 </p>
                                             </div>
@@ -569,7 +651,7 @@
                                         <div class="swiper-slide">
                                             <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
                                                 <h5 class="mil-up mil-mb-10">Dewang Bhardwaj</h5>
-                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Doctune</p>
+                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Doctunes</p>
                                                 <p class="mil-text-xl mil-up">Doctune's partnership with this team for social media services has been transformative, significantly increasing our visibility and engagement across platforms. Their strategic and creative approach has propelled our brand to new heights.</p>
                                             </div>
                                         </div>
@@ -617,9 +699,9 @@
                         <div class="row">
                             <div class="col-lg-6">
 
-                                <a href="logo-legends-stories-behind-worlds-most-peculiar-logos.html" class="mil-blog-card mil-mb-60">
+                                <a href="./blogs/logo-legends-stories-behind-worlds-most-peculiar-logos.html" class="mil-blog-card mil-mb-60">
                                     <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/blog25.png" alt="cover">
+                                        <img src="img/blog/logo-legends-stories-behind-worlds-most-peculiar-logos.webp" alt="cover">
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
@@ -637,9 +719,9 @@
                             </div>
                             <div class="col-lg-6">
 
-                                <a href="ai-for-everyone-democratizing-design-with-generative-ai-tools.html" class="mil-blog-card mil-mb-60">
+                                <a href="./blogs/ai-for-everyone-democratizing-design-with-generative-ai-tools.html" class="mil-blog-card mil-mb-60">
                                     <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/blog5.png" alt="cover">
+                                        <img src="img/blog/ai-for-everyone-democratizing-design-with-generative-ai-tools.webp" alt="cover">
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
@@ -687,19 +769,19 @@
                                             <nav class="mil-footer-menu mil-mb-60">
                                                 <ul>
                                                     <li class="mil-up mil-active">
-                                                        <a href="index.html">Home</a>
+                                                        <a href="./index.html">Home</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="portfolio.html">Portfolio</a>
+                                                        <a href="./portfolio.html">Portfolio</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="services.html">Services</a>
+                                                        <a href="./services.html">Services</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="./contact.html">Contact</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="blog.html">Blog</a>
+                                                        <a href="./blog.html">Blog</a>
                                                     </li>
                                                 </ul>
                                             </nav>
@@ -708,8 +790,8 @@
                                         <div class="col-md-6 col-lg-5">
 
                                             <ul class="mil-menu-list mil-up mil-mb-60">
-                                                <li><a href="privacy.html" class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="terms.html" class="mil-light-soft">Terms and conditions</a></li>
+                                                <li><a href="./policies/privacy-policy.html" class="mil-light-soft">Privacy Policy</a></li>
+                                                <li><a href="./policies/terms-and-conditions.html" class="mil-light-soft">Terms and Conditions</a></li>
                                             </ul>
 
                                         </div>
@@ -744,11 +826,30 @@
 
                                     <div class="mil-vert-between">
                                         <div class="mil-mb-30">
-                                            <ul class="mil-social-icons-1 mil-up">
-                                                <li><a href="https://www.facebook.com/people/7colors/61556792813679/" target="_blank" class="social-icon"> <i class="fab fa-facebook-square"></i></a></li>
-                                                <li><a href="https://api.whatsapp.com/send?phone=919875130005" target="_blank" class="social-icon"> <i class="fab fa-whatsapp-square"></i></a></li>
-                                                <li><a href="https://www.instagram.com/7colors.in?igsh=MXVzdzZqYnA2ZDdvbA==" target="_blank" class="social-icon"> <i class="fab fa-instagram-square"></i></a></li>
-                                                <li><a href="https://www.linkedin.com/company/82655779/" target="_blank" class="social-icon"> <i class="fab fa-linkedin"></i></a></li>
+                                            <ul class="mil-social-icons mil-up">
+                                                <li>
+                                                    <a href="https://www.facebook.com/people/7colors/61556792813679/" target="blank" class="social-icon"> 
+                                                        <i class='bx bxl-facebook-circle'></i>
+                                                    </a>
+                                                </li>
+    
+                                                <li>
+                                                    <a href="https://api.whatsapp.com/send?phone=919875130005" target="blank" class="social-icon"> 
+                                                        <i class='bx bxl-whatsapp-square' ></i>
+                                                    </a>
+                                                </li>
+    
+                                                <li>
+                                                    <a href="https://www.instagram.com/7colors.in?igsh=MXVzdzZqYnA2ZDdvbA==" target="blank" class="social-icon"> 
+                                                        <i class='bx bxl-instagram-alt' ></i>
+                                                    </a>
+                                                </li>
+    
+                                                <li>
+                                                    <a href="https://www.linkedin.com/company/82655779/" target="blank" class="social-icon"> 
+                                                        <i class='bx bxl-linkedin' ></i>
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </div>
                                         
@@ -891,6 +992,25 @@
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="js/main.js"></script>
+
+    <script>
+        const openFormBtn = document.querySelector('#FormButton');
+        const theForm = document.querySelector('.lead-gen-form-container');
+        const formCloseBth = document.querySelector('.bx-x');
+        const  openFormBtn2 = document.querySelector('#FormButton-2');
+
+        openFormBtn.addEventListener('click',()=>{
+            theForm.style.display = "block";
+        })
+        
+        openFormBtn2.addEventListener('click',()=>{
+            theForm.style.display = "block";
+        })
+
+        formCloseBth.addEventListener('click',()=>{
+            theForm.style.display = "none";
+        })
+    </script>
 
 </body>
 

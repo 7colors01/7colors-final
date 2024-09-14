@@ -1,0 +1,155 @@
+.hero-para{
+    font-size: 20px;
+}
+
+.about-para{
+    color: #1e1e1e;
+    font-weight: 400;
+}
+.about-heading{
+    color: #013C55;
+}
+
+
+.mil-banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.lead-gen-form-container{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 24%;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100;
+    padding: 2rem;        
+}
+
+.lead-form-header{
+    margin-bottom: 2.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.lead-form-header i{
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lead-gen-form{
+    padding: 2rem 1rem;
+    padding-top: 1rem!important;
+}
+.lead-gen-form label{
+    font-weight: 500;
+    color: #000;
+}
+
+.lead-gen-form input{
+    height: 40px;
+    padding: 0 6px;
+}
+
+.lead-gen-form #message{
+    position: relative;
+    height: 80px;
+    padding: 0 6px;
+    width: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: "Outfit", sans-serif;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.lead-gen-form button{
+    width: 100%;
+    height: 2.2rem;
+    background-color: #FF9800;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.form-btn2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -64px;
+    z-index: 100;
+    top: 400px;
+    background-color: #fff;
+    transform: rotate(90deg);
+    padding: 12px 14px;
+    font-size: 16px;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.form-btn2 i{
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+@media(max-width:1205px){
+    .lead-gen-form-container{
+        height: 100vh;
+        width: 38%;
+        z-index: 100;
+        padding: 1.3rem;   
+        z-index: 1000;     
+    }
+    .lead-gen-form #message{
+        margin-bottom: 18px;
+    }
+    .lead-gen-form input{
+        height: 28px;
+        padding: 0 6px;
+    }
+}
+
+@media(max-width:805px){
+    .lead-gen-form-container{
+        width: 54%;
+        padding: 1.6rem;
+    }
+    .lead-form-header{
+        margin-bottom: 1rem;
+    }
+    .lead-gen-form #message{
+        margin-bottom: 18px;
+    }
+    .lead-gen-form input{
+        height: 32px;
+        padding: 0 6px;
+    }
+}
+
+@media(max-width:500px){
+    .lead-gen-form-container{
+        width: 74%;
+        padding: 2rem 1.2rem;
+    }
+
+    .form-btn2{
+        right: -68px;
+    }
+}
