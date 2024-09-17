@@ -66,7 +66,7 @@
         <!-- cursor end -->
 
         <!-- preloader -->
-         <!-- <div class="mil-preloader">
+        <div class="mil-preloader">
             <div class="mil-preloader-animation">
                 <div class="mil-pos-abs mil-animation-1">
                     <p class="mil-h3 mil-muted mil-thin">Creating </p>
@@ -74,7 +74,7 @@
                     <p class="mil-h3 mil-muted mil-thin">Possibilities</p>
                 </div>
             </div>
-        </div> -->
+        </div> 
         <!-- preloader end -->
 
         <!-- scrollbar progress -->
@@ -125,7 +125,7 @@
                                         </ul> -->
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="contact.html">Free Consultation</a>
+                                        <a href="contact.html">Contact Us</a>
                                         <!-- <ul>
                                             <li><a href="blog.html">Blog List</a></li>
                                             <li><a href="publication.html">Publication</a></li>
@@ -228,10 +228,21 @@
         </div>
         <!-- frame end -->
 
+        <!-- ----------Fixed Form Button----------  -->
+
         <button id="FormButton-2" class="form-btn2">
             <span>Free Consultation</span>
             <i class='bx bx-chevron-down' ></i>
         </button>
+
+        <!-- ----------Whatsapp Button----------  -->
+
+        <div class="whatsapp-btn">
+            <span>Need Help? <strong>Chat with us</strong></span>
+            <a href="https://wa.me/9875130005">
+                <i class='bx bxl-whatsapp'></i>
+            </a>
+        </div>
 
         <!-- content -->
         <div class="mil-content">
@@ -251,7 +262,8 @@
                         <div class="container">
                             <div class="mil-banner-content mil-up">
 
-                                <h1 class="mil-muted mil-mb-60">Coloring<span class="mil-thin">Your Brand's</span><br> Digital <span class="mil-thin">Destiny!</span></h1>
+                                <div>
+                                    <h1 class="mil-muted mil-mb-60">Coloring<span class="mil-thin">Your Brand's</span><br> Digital <span class="mil-thin">Destiny!</span></h1>
                                 <div class="row">
                                     <div class="col-md-7 col-lg-5">
 
@@ -268,7 +280,8 @@
                                 <a href="services.html" class="mil-link mil-muted mil-arrow-place">
                                     <span>What We Do</span>
                                 </a>
-                                 
+                                </div>
+
                                 <!-- <div class="mil-circle-text">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
                                         <defs>
@@ -286,9 +299,35 @@
                                 </div> -->
 
                             </div>
-                           
+                            
                         </div>
                     </div>
+                    <!-- <div class="numbers-container">
+                        <div class="number-box">
+                           <span>
+                              25+ 
+                              clients
+                           </span>
+                        </div>
+                        <div class="number-box">
+                           <span>
+                              25+ 
+                              clients
+                           </span>
+                        </div>
+                        <div class="number-box">
+                           <span>
+                              25+ 
+                              clients
+                           </span>
+                        </div>
+                        <div class="number-box">
+                           <span>
+                              25+ 
+                              clients
+                           </span>
+                        </div>
+                   </div> -->
                 </section>
                 <!-- banner end -->
 
@@ -300,21 +339,24 @@
                         <i class='bx bx-x'></i>
                     </div>
 
-                    <form action="" method="" class="lead-gen-form">
+                    <form action="https://api.web3forms.com/submit" method="POST" method="" class="lead-gen-form">
+
+                        <input type="hidden" name="access_key" value="5160febb-3ea0-4b25-9bd5-014dfb0c6049">
+
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <input name="name" type="text" id="name" name="name" required>
                     
                         <label for="contact">Contact Number:</label>
-                        <input type="number" id="contact" name="contact" required pattern="[0-9]{10}" title="Enter a 10-digit contact number">
+                        <input name="Contact Number" type="number" id="contact" name="contact" required pattern="[0-9]{10}" title="Enter a 10-digit contact number">
                     
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" name="email"" id="email" name="email" required>
                     
                         <label for="business">Business Name:</label>
-                        <input type="text" id="business" name="business">
+                        <input  type="text" name="Business Name" type="text" id="business" name="business">
                     
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message"></textarea>
+                        <textarea  name="message" id="message"></textarea>
                     
                         <button type="submit">Submit</button>
                     </form>
@@ -758,7 +800,7 @@
                                         <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
                                     </form> -->
                                     <a href="contact.html" class="mil-button mil-arrow-place mil-btn-space">
-                                        <span>Free Consultation</span>
+                                        <span>Contact Us</span>
                                     </a>
 
                                 </div>
@@ -778,7 +820,7 @@
                                                         <a href="./services.html">Services</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="./contact.html">Free Consultation</a>
+                                                        <a href="./contact.html">Contact Us</a>
                                                     </li>
                                                     <li class="mil-up">
                                                         <a href="./blog.html">Blog</a>
@@ -995,11 +1037,10 @@
 
     <script>
         
-       const openFormBtn = document.querySelector('#FormButton');
+        const openFormBtn = document.querySelector('#FormButton');
         const theForm = document.querySelector('.lead-gen-form-container');
         const formCloseBth = document.querySelector('.bx-x');
         const  openFormBtn2 = document.querySelector('#FormButton-2');
-
 
         openFormBtn.addEventListener('click',()=>{
             theForm.style.display = "block";
@@ -1011,12 +1052,13 @@
 
         formCloseBth.addEventListener('click',()=>{
             theForm.style.display = "none";
+            theForm.setAttribute("form-close");
         })
 
         // ---------------------------
 
         function changeFormBtn(){
-            openFormBtn2.style.backgroundColor = "#000";
+            openFormBtn2.style.backgroundColor = "#FF9800";
             openFormBtn2.style.color= '#fff';
         }
         function changeFormBtnBack(){
@@ -1044,9 +1086,10 @@
         setTimeout(() => {changeFormBtnBack();}, 40000);
 
         // ---------------------------
+        theForm.style.display = 'none';
         setTimeout(function showForm() {
           theForm.style.display = 'block';
-        }, 3000);
+        }, 7000);
         
     </script>
 

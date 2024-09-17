@@ -2908,6 +2908,9 @@ revievs
 blog
 
 ------------------------------------------- */
+.blog{
+  color: #000;
+}
 .mil-blog-card {
   display: block;
 }
@@ -4362,6 +4365,21 @@ html.is-animating .mil-menu-frame {
 
 /* ----------------------------------------------------------------------------- */
 
+.numbers-container {
+  position: absolute;
+  height: 8vh;
+  width: 100vw;
+  /* background-color: #012230; */
+  border-top: 1px solid #ccc;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #fff;
+}
+
 .hero-para{
   font-size: 20px;
 }
@@ -4406,14 +4424,28 @@ html.is-animating .mil-menu-frame {
 }
 
 .lead-gen-form-container {
-  animation: .8s fade;
+  animation: .8.5s slide;
 }
-@keyframes fade {
+
+.form-close{
+  animation: .8.5s slide-out;
+}
+
+@keyframes slide {
   from {
-    opacity: 0;
+    right: -30rem;
   }
   to {
-    opacity:1;
+    right: 0rem;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    right: 0rem;
+  }
+  to {
+    right: -30rem;
   }
 }
 
@@ -4447,8 +4479,8 @@ html.is-animating .mil-menu-frame {
 
 .lead-gen-form #message{
   position: relative;
-  height: 80px;
-  padding: 0 6px;
+  height: 68px;
+  padding: 4px 6px;
   width: 100%;
   font-size: 12px;
   text-transform: uppercase;
@@ -4463,7 +4495,8 @@ html.is-animating .mil-menu-frame {
 
 .lead-gen-form button{
   width: 100%;
-  height: 2.2rem;
+  font-size: 1rem;
+  height: 2.4rem;
   background-color: #FF9800;
   color: #fff;
   border-radius: 4px;
@@ -4497,10 +4530,45 @@ html.is-animating .mil-menu-frame {
 }
 
 .form-btn2 i{
-  background-color: #727272;
+  background-color: #000;
   color: #fff;
   border-radius: 50%;
   margin-left: 8px;
+}
+
+.whatsapp-btn{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+
+.whatsapp-btn span{
+  font-size: 14px;
+  border-radius: 2px;
+  color: #4f4f4f;
+  margin-right: 10px;
+  background-color: #f5f7f9;
+  padding: 2px 8px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.whatsapp-btn a{
+  height: 3.4rem;
+  width: 3.4rem;
+  background-color: #25D366;
+  border-radius: 50%;
+  color:#fff;
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 @media(max-width:1205px){
@@ -4544,6 +4612,20 @@ html.is-animating .mil-menu-frame {
   .lead-gen-form input{
       height: 32px;
       padding: 0 6px;
+  }
+
+  .whatsapp-btn{
+    z-index: 4;
+  }
+  .whatsapp-btn span{
+    font-size: 12px;
+    padding: 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  .whatsapp-btn a{
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
   }
 
 }

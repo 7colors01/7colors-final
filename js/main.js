@@ -66,36 +66,36 @@ $(function () {
     },
   );
 // -----------------------
-//  timeline.to(
-//    ".mil-animation-1 .mil-h3",
-//    {
-//      opacity: 0,
-//      y: "-30",
-//    },
-//    "+=.3",
-//  );
-//  timeline.fromTo(
-//    ".mil-reveal-box",
-//    0.1,
-//    {
-//      opacity: 0,
-//    },
-//    {
-//      opacity: 1,
-//      x: "-30",
-//    },
-//    "+=.03",
-//  );
+  // timeline.to(
+  //   ".mil-animation-1 .mil-h3",
+  //   {
+  //     opacity: 0,
+  //     y: "-30",
+  //   },
+  //   "+=.001",
+  // );
+  // timeline.fromTo(
+  //   ".mil-reveal-box",
+  //   0.00,
+  //   {
+  //     opacity: 0,
+  //   },
+  //   {
+  //     opacity: 1,
+  //     x: "-30",
+  //   },
+  //   "+=.01",
+  // );
 // -----------------------
 
   timeline.to(
     ".mil-reveal-box",
-    0.45,
+    0.25,
     {
       width: "100%",
       x: 0,
     },
-    "+=.1",
+    "+=.05",
   );
   timeline.to(".mil-reveal-box", {
     right: "0",
@@ -115,25 +115,25 @@ $(function () {
   );
   timeline.to(
     ".mil-animation-2 .mil-h3",
-    0.6,
+    0.06,
     {
       opacity: 0,
       y: "-30",
     },
-    "+=.5",
+    "+=.05",
   );
   timeline.to(
     ".mil-preloader",
-    0.8,
+    0.02,
     {
       opacity: 0,
       ease: "sine",
     },
-    "+=.2",
+    "+=.01",
   );
   timeline.fromTo(
     ".mil-up",
-    0.8,
+    0.02,
     {
       opacity: 0,
       y: 40,
@@ -148,7 +148,7 @@ $(function () {
         $(".mil-preloader").addClass("mil-hidden");
       },
     },
-    "-=1",
+    "-=.1",
   );
   /***************************
 

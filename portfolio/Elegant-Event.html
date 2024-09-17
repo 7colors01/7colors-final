@@ -133,7 +133,7 @@
                                         </ul> -->
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="../contact.html">Free Consultation</a>
+                                        <a href="../contact.html">Contact Us</a>
                                         <!-- <ul>
                                             <li><a href="blog.html">Blog List</a></li>
                                             <li><a href="publication.html">Publication</a></li>
@@ -233,6 +233,80 @@
         </div>
         <!-- frame end -->
 
+        
+        <!-- ----------Whatsapp Button----------  -->
+
+        <div class="whatsapp-btn">
+            <span>Need Help? <strong>Chat with us</strong></span>
+            <a href="https://wa.me/9875130005">
+                <i class='bx bxl-whatsapp'></i>
+            </a>
+        </div>
+                  
+        <!-- ---------Lead gen form--------- -->
+        
+        <button id="FormButton-2" class="form-btn2">
+            <span>Free Consultation</span>
+            <i class='bx bx-chevron-down' ></i>
+        </button>
+        
+        
+        <div class="lead-gen-form-container">
+            <div class="lead-form-header">
+                <h4>Schedule a call.</h4>
+                <i class='bx bx-x'></i>
+            </div>
+        
+            <form action="https://api.web3forms.com/submit" method="POST" method="" class="lead-gen-form">
+
+                <input type="hidden" name="access_key" value="5160febb-3ea0-4b25-9bd5-014dfb0c6049">
+
+                <label for="name">Name:</label>
+                <input name="name" type="text" id="name" name="name" required>
+            
+                <label for="contact">Contact Number:</label>
+                <input name="Contact Number" type="number" id="contact" name="contact" required pattern="[0-9]{10}" title="Enter a 10-digit contact number">
+            
+                <label for="email">Email:</label>
+                <input type="email" name="email"" id="email" name="email" required>
+            
+                <label for="business">Business Name:</label>
+                <input  type="text" name="Business Name" type="text" id="business" name="business">
+            
+                <label for="message">Message:</label>
+                <textarea  name="message" id="message"></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
+            
+        
+                <ul class="mil-social-icons mil-up" style="display: flex;flex-direction: row;align-items: center;justify-content: center;margin-top: -10px;">
+                    <li>
+                        <a href="https://www.facebook.com/people/7colors/61556792813679/" target="blank" class="social-icon"> 
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=919875130005" target="blank" class="social-icon"> 
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="https://www.instagram.com/7colors.in?igsh=MXVzdzZqYnA2ZDdvbA==" target="blank" class="social-icon"> 
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="https://www.linkedin.com/company/82655779/" target="blank" class="social-icon"> 
+                            <i class='bx bxl-linkedin' ></i>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        
         <!-- content -->
         <div class="mil-content mil-dark-bg">
             <div id="swupMain" class="mil-main-transition">
@@ -331,7 +405,7 @@
                                         <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
                                     </form> -->
                                     <a href="../contact.html" class="mil-button mil-arrow-place mil-btn-space">
-                                        <span>Free Consultation</span>
+                                        <span>Contact Us</span>
                                     </a>
 
                                 </div>
@@ -351,7 +425,7 @@
                                                         <a href="../services.html">Services</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="../contact.html">Free Consultation</a>
+                                                        <a href="../contact.html">Contact Us</a>
                                                     </li>
                                                     <li class="mil-up">
                                                         <a href="../blog.html">Blog</a>
@@ -565,6 +639,71 @@
     <script src="../js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="../js/main.js"></script>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const openFormBtn = document.querySelector('#FormButton');
+          const theForm = document.querySelector('.lead-gen-form-container');
+          const formCloseBth = document.querySelector('.bx-x');
+          const openFormBtn2 = document.querySelector('#FormButton-2');
+        
+          // Only add event listeners if the elements exist
+          if (openFormBtn) {
+            openFormBtn.addEventListener('click', () => {
+              theForm.style.display = 'block';
+            });
+          }
+        
+          if (openFormBtn2) {
+            openFormBtn2.addEventListener('click', () => {
+              theForm.style.display = 'block';
+            });
+          }
+        
+          if (formCloseBth) {
+            formCloseBth.addEventListener('click', () => {
+              theForm.style.display = 'none';
+            });
+          }
+        
+          // Function to change button color
+          function changeFormBtn() {
+            if (openFormBtn2) {
+              openFormBtn2.style.backgroundColor = '#FF9800';
+              openFormBtn2.style.color = '#fff';
+            }
+          }
+        
+          function changeFormBtnBack() {
+            if (openFormBtn2) {
+              openFormBtn2.style.backgroundColor = '#fff';
+              openFormBtn2.style.color = '#000';
+            }
+          }
+        
+          // Alternating the button color changes over time
+          setTimeout(() => { changeFormBtn(); }, 2000);
+          setTimeout(() => { changeFormBtnBack(); }, 4000);
+          setTimeout(() => { changeFormBtn(); }, 6000);
+          setTimeout(() => { changeFormBtnBack(); }, 8000);
+          setTimeout(() => { changeFormBtn(); }, 10000);
+          setTimeout(() => { changeFormBtnBack(); }, 12000);
+          setTimeout(() => { changeFormBtn(); }, 16000);
+          setTimeout(() => { changeFormBtnBack(); }, 18000);
+          setTimeout(() => { changeFormBtn(); }, 20000);
+          setTimeout(() => { changeFormBtnBack(); }, 22000);
+          setTimeout(() => { changeFormBtn(); }, 24000);
+          setTimeout(() => { changeFormBtnBack(); }, 26000);
+          setTimeout(() => { changeFormBtn(); }, 30000);
+          setTimeout(() => { changeFormBtnBack(); }, 32000);
+          setTimeout(() => { changeFormBtn(); }, 34000);
+          setTimeout(() => { changeFormBtnBack(); }, 36000);
+          setTimeout(() => { changeFormBtn(); }, 38000);
+          setTimeout(() => { changeFormBtnBack(); }, 40000);
+        
+        });
+    </script>
 </body>
 
 </html>

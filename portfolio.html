@@ -110,7 +110,7 @@
                                         </ul> -->
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="./contact.html">Free Consultation</a>
+                                        <a href="./contact.html">Contact Us</a>
                                         <!-- <ul>
                                             <li><a href="blog.html">Blog List</a></li>
                                             <li><a href="publication.html">Publication</a></li>
@@ -150,21 +150,24 @@
                 <i class='bx bx-x'></i>
             </div>
 
-            <form action="" method="" class="lead-gen-form">
+            <form action="https://api.web3forms.com/submit" method="POST" method="" class="lead-gen-form">
+
+                <input type="hidden" name="access_key" value="5160febb-3ea0-4b25-9bd5-014dfb0c6049">
+
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input name="name" type="text" id="name" name="name" required>
             
                 <label for="contact">Contact Number:</label>
-                <input type="number" id="contact" name="contact" required pattern="[0-9]{10}" title="Enter a 10-digit contact number">
+                <input name="Contact Number" type="number" id="contact" name="contact" required pattern="[0-9]{10}" title="Enter a 10-digit contact number">
             
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" name="email"" id="email" name="email" required>
             
                 <label for="business">Business Name:</label>
-                <input type="text" id="business" name="business">
+                <input  type="text" name="Business Name" type="text" id="business" name="business">
             
                 <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea  name="message" id="message"></textarea>
             
                 <button type="submit">Submit</button>
             </form>
@@ -202,6 +205,16 @@
             <span>Free Consultation</span>
             <i class='bx bx-chevron-down' ></i>
         </button>
+
+        <!-- ----------Whatsapp Button----------  -->
+
+        <div class="whatsapp-btn">
+          <span>Need Help? <strong>Chat with us</strong></span>
+          <a href="https://wa.me/9875130005">
+              <i class='bx bxl-whatsapp'></i>
+          </a>
+        </div>
+        
         <!-- content -->
         <div class="mil-content mil-dark-bg">
             <div id="swupMain" class="mil-main-transition">
@@ -592,7 +605,7 @@
          // Function to change button color
          function changeFormBtn() {
            if (openFormBtn2) {
-             openFormBtn2.style.backgroundColor = '#000';
+             openFormBtn2.style.backgroundColor = '#FF9800';
              openFormBtn2.style.color = '#fff';
            }
          }
