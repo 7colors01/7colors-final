@@ -478,7 +478,7 @@ a {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-bottom: 140%;
+  padding-bottom: 100%;
 }
 .mil-img-frame img {
   position: absolute;
@@ -4571,12 +4571,15 @@ html.is-animating .mil-menu-frame {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+.about-container{
+  height: 90vh;
+}
 .numbers-section{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: -10rem;
+  /* margin-top: -10rem; */
 }
 .numbers-section div{
   display: flex;
@@ -4637,6 +4640,7 @@ html.is-animating .mil-menu-frame {
 @media(max-width:700px){
   .numbers-section{
     margin-bottom: 2rem;
+    margin-top: -10rem;
   }
   .numbers-section div .number-box{
     border-bottom: 6px solid #013C55;
@@ -4689,6 +4693,9 @@ html.is-animating .mil-menu-frame {
 }
 
 @media(max-width:805px){
+  .about-container{
+    height: auto;
+  }
   .lead-gen-form-container{
       width: 54%;
       padding: 1.6rem;
