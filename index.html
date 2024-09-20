@@ -240,7 +240,7 @@
 
         <div class="whatsapp-btn">
             <span>Need Help? <strong>Chat with us</strong></span>
-            <a href="https://wa.me/9875130005">
+            <a href="https://wa.me/9875130005" target="_blank">
                 <i class='bx bxl-whatsapp'></i>
             </a>
         </div>
@@ -452,31 +452,33 @@
                                    <div>
                                        <div></div>
                                        <div style="border-bottom: 6px solid #FF9800;" class="number-box">
-                                           <h4><span>2x</span> <br> ROI </h4>
+                                           <h4><span id="counter6">0x</span> <br> ROI </h4>
                                        </div>
                                        <div class="number-box">
-                                          <h4><span>40%</span> <br>Conversions</h4>
+                                          <h4><span id="counter7">0%</span> <br>Conversions</h4>
                                        </div>
                                    </div>
 
                                    <div class="nd-2">
                                        <div class="number-box">
-                                           <h4><span>25+</span> <br>Clients</h4>
+                                           <h4><span id="counter1">0+</span> <br>Clients</h4>
                                        </div>
                                        <div class="number-box">
-                                        <h4><span>100%</span> <br> Success </h4>
+                                        <h4><span id="counter3">0%</span> <br> Success </h4>
                                        </div>
                                        <div style="border-bottom: 6px solid #FF9800;" class="number-box">
-                                           <h4><span>70+</span> <br>Projects</h4>
+                                           <h4><span id="counter2">0+</span> <br>Projects</h4>
                                        </div>
                                    </div>
 
                                    <div class="nd-2">
+                                    <div></div>
+
                                        <div style="border-bottom: 6px solid #FF9800;"  class="number-box">
-                                           <h4><span>3x</span> <br>ROAS</h4>
+                                           <h4><span id="counter5">0x</span> <br>ROAS</h4>
                                        </div>
                                        <div class="number-box">
-                                           <h4><span>1800+</span> <br>Qualified Leads</h4>
+                                           <h4><span id="counter4">0+</span> <br>Qualified Leads</h4>
                                        </div>
                                    </div>
                                 </div> 
@@ -1125,7 +1127,29 @@
         }, 7000);
         
     </script>
+    <script>
+        // Function to animate each counter
+        function animateCounter(counterElement, startValue, endValue, duration) {
+            let stepTime = Math.abs(Math.floor(duration / endValue));
+            let incrementCounter = setInterval(() => {
+                startValue += 1;
+                counterElement.textContent = startValue;
+                if (startValue === endValue) {
+                    clearInterval(incrementCounter);
+                }
+            }, stepTime);
+        }
+        
+        // Initialize each counter with different end values and durations
+        animateCounter(document.getElementById("counter1"), 0, 25, 5000);
+        animateCounter(document.getElementById("counter2"), 0, 90, 5000);
+        animateCounter(document.getElementById("counter3"), 0, 100, 5000);
+        animateCounter(document.getElementById("counter4"), 0, 1800, 2500);
+        animateCounter(document.getElementById("counter5"), 0, 3, 3500);
+        animateCounter(document.getElementById("counter6"), 0, 2, 3500);
+        animateCounter(document.getElementById("counter7"), 0, 40, 4000);
 
+    </script>
 </body>
 
 </html>
